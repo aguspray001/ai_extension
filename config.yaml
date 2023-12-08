@@ -12,9 +12,12 @@ arch:
 environment:
   CAM_ENTITY: "cctv_ruang_mahasiswa"
   HA_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhZTU3NTM5Yjk4ZjQ0NTFiOWEyZmNlMDI5MmM5ODk0NSIsImlhdCI6MTcwMjAxNDMyOCwiZXhwIjoyMDE3Mzc0MzI4fQ.W0IGveql-wk3y1ftWnYw1zCftxm3xZpQ4t2g8Erx35s"
+  OB_MODEL: "yolov8l.pt"
 options:
   camera_entity: ""
   user_token: ""
+  ob_model: "yolov8l.pt"
 schema:
   camera_entity: str
   user_token: str
+  ob_model: str
