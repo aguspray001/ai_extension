@@ -1,5 +1,8 @@
 #!/usr/bin/with-contenv bashio
-
+echo "installing requirements library..."
+python --version
+pip3 install --no-cache-dir -r requirements.txt
+echo "-----FINISH-----"
 echo "Start Object Detection Extension!"
 
 #variable
@@ -18,4 +21,5 @@ echo "ob model => ${OB_MODEL}"
 
 #execute main program
 # source ./venv/Scripts/activate
+
 python app.py
