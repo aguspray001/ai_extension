@@ -24,6 +24,11 @@ def plotting_result(results, camera_entity):
         im = Image.fromarray(im_array[..., ::-1])  # RGB PIL image
         im.save(f"{image_path}"+"/{camera_entity}_y8_latest.jpg".format(camera_entity=camera_entity))  # save image
         
+def data_formatter(results):
+    # Show the results
+    for r in results:
+        print(r.tojson())  # plot a BGR numpy array of predictions
+        return r.tojson()
 
 def transfer_file(local_path, remote_path, hostname, port, username, password):
     
